@@ -1,1 +1,4 @@
 <h1>Page 1</h1>
+
+<p>J'ai {{ hungryService.isHungry ? '' : 'pas' }} faim.</p>
+<button (click)="hungryService.isHungry = true">digerer</button>
