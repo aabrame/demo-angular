@@ -1,0 +1,7 @@
+<h1>Page 2</h1>
+<div>idFromSnapshot: {{idFromSnapshot}}</div>
+<div>idFromObservable: {{idFromObservable}}</div>
+<ng-container *ngIf="idFromObservable">
+  <a [routerLink]="'/page2/' + (idFromObservable-1)">prev</a> -
+  <a [routerLink]="'/page2/' + (idFromObservable+1)">next</a>
+</ng-container>

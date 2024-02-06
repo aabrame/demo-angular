@@ -1,0 +1,9 @@
+<div>
+  <strong #title>Parent</strong>
+  <app-child [person]="andre">
+    <h5>un titre qui vient du parent</h5>
+    <p>et un paragraphe, du parent aussi</p>
+  </app-child>
+  <app-child *ngFor="let p of people; index as i" [person]="p" (delete)="onDelete(i)"></app-child>
+</div>
+
