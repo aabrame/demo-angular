@@ -1,0 +1,10 @@
+<h2>Template-driven forms</h2>
+
+<form>
+  <input type="text" name="name" [(ngModel)]="person.name" placeholder="Name"/><br/>
+  <input type="number" name="age" [(ngModel)]="person.age" placeholder="Age"/><br/>
+</form>
+
+{{json}}
+
+<button (click)="person.name = person.name.toUpperCase()">change</button>

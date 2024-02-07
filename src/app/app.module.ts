@@ -9,6 +9,9 @@ import { Page2Component } from './page2/page2.component';
 import { HomeComponent } from './home/home.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { FormTemplateDrivenComponent } from './form-template-driven/form-template-driven.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormReactiveComponent } from './form-reactive/form-reactive.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,15 @@ import { ChildComponent } from './child/child.component';
     Page2Component,
     HomeComponent,
     ParentComponent,
-    ChildComponent
+    ChildComponent,
+    FormTemplateDrivenComponent,
+    FormReactiveComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

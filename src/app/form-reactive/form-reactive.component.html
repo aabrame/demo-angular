@@ -1,0 +1,10 @@
+<h2>Reactive forms</h2>
+
+<form [formGroup]="personFormGroup">
+  <input type="text" name="name" formControlName="name" placeholder="Name"/><br/>
+  <input type="number" name="age" formControlName="age" placeholder="Age"/><br/>
+</form>
+
+{{json}}
+
+<button (click)="reset()">reset</button>
